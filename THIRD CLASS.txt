@@ -1,0 +1,40 @@
+17-07-26
+lamba expression by arrow functions
+it is anonymous cls means having no name
+sorting with anonymous cls means cls also not considering
+sort any kind of elements= comparator
+thread is the smallest unit of programming and it doesn't depend on anyother thread
+for complex programming we are going to use threads to solve. ex- bookmyshow- booking tickets
+event listener some actions are performanced by externals source
+New way to express lamba:
+// sorting
+Collections.sort(names,(s1,s2) -> s1.length()-s2.length());
+//threads
+Thread thread = new thread(() -> System.out.println("Running in thread");
+//event listener
+button.addActionListener(e -> System.out.println("Button clicked!"));
+Syntax breakdown for lamba
+(parameters) -> expression
+no parameters
+() -> s.o.p("hello");
+2. one parameter
+name -> s.o.p(name)
+3.multiple parameters
+(a,b) -> a+b;
+(a,b) -> {return a+b};
+4. multiple statements (must use curly brackets)
+(a,b) -> {
+     int sum = a+b;
+     s.o.p("sum:" + sum);
+     return sum;
+};
+
+Module 2: streams
+stream- a sequence of elements supporting functional style operations
+pipeline- source -> intermediate operations -> terminal operation
+key pipeline- streams are lazy bcoz operations dont execute until terminal operation called
+
+excersice1
+how to extract name using hashmap functionpublic class studentNameExtractor{
+###Excerwsice in chain
+

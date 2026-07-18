@@ -1,0 +1,37 @@
+Overriding = subclass provide a specific implementation of a method already defined in the parent class
+
+Rules:
+1. Method signature (name + parameters) must be exactly same 
+2. Return type must be same or a subtype  (covariant return type)
+3. Access modifier cannot be more restrictive (can be more permissive)
+4. Can’t override ‘final’, ‘static’ , or ‘private’ methods
+
+Industry analogy :company wide policy vs Department specific 
+
+String methods:
+Trim,split,concat,substrig,charAt,trim 
+
+Constructor Method
+Used to initialize an object	Used to perform an action or task
+Name must be the same as the class name	Can have any valid name
+No return type (not even void)	Must have a return type (void, int, String, etc.)
+Called automatically when an object is created	Called explicitly using the object (or class for static methods)
+Can be overloaded	Can be overloaded and overridden
+Executes once per object creation	Can be called any number of times
+
+Polymorphism (The “Multiple forms”)
+Polymorphism = one interface , multiple implementations 
+
+1)Compile - time polymorphism(method overloading)
+Concept : Multiple methods with the same name but different parameters 
+Resolved at: Compile time (hence compile-time polymorphism)
+Industry analogy:  Amazon search bar - you can search by :
+- Product name (‘search(String name)’)
+- category(’search(string category, minPrice, int)’)
+
+example:
+class SearchingEngine {
+    public void search(String productName) {
+        System.out.println("Searching for product: " + productName);
+
+    }
